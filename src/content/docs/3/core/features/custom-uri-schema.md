@@ -1,0 +1,3 @@
+---
+title: Custom URI Schema
+---

@@ -28,73 +28,88 @@ export default defineConfig({
         {
           label: "Core concepts",
           collapsed: true,
-          autogenerate: { directory: "3/core", collapsed: true },
+          items: [
+            {
+              label: "Architecture",
+              autogenerate: { directory: "3/core/architecture" },
+            },
+            {
+              label: "Features",
+              autogenerate: { directory: "3/core/features", collapsed: true },
+            },
+          ]
+        },
+        {
+          label: "Basics",
+          collapsed: true,
+          items: [
+            {
+              label: "Web",
+              autogenerate: { directory: "3/basic/web", collapsed: true },
+            },
+            {
+              label: "Rust",
+              autogenerate: { directory: "3/basic/rust", collapsed: true },
+            }
+          ]
         },
         {
           label: "Guides",
           collapsed: true,
           items: [
             {
-              label: "Develop",
+              label: "Developing",
               autogenerate: { directory: "3/guide/develop", collapsed: true },
             },
             {
-              label: "Build",
+              label: "Debugging",
+              autogenerate: { directory: "3/guide/debug", collapsed: true },
+            },
+            {
+              label: "Testing",
+              autogenerate: { directory: "3/guide/test", collapsed: true },
+            },
+            {
+              label: "Building",
               autogenerate: { directory: "3/guide/build", collapsed: true },
             },
             {
-              label: "Test",
-              autogenerate: { directory: "3/guide/test", collapsed: true },
+              label: "Distributing",
+              autogenerate: { directory: "3/guide/distribute", collapsed: true },
             },
             {
               label: "CI/CD",
               autogenerate: { directory: "3/guide/ci-cd", collapsed: true },
             },
             {
-              label: "Distribute",
-              autogenerate: { directory: "3/guide/distribute", collapsed: true },
+              label: "Security",
+              autogenerate: { directory: "3/guide/security", collapsed: true },
             },
             {
-              label: "Rust",
-              autogenerate: { directory: "3/guide/rust", collapsed: true },
-            },
-            {
-              label: "Javascript",
-              autogenerate: { directory: "3/guide/javascript", collapsed: true },
+              label: "Legal",
+              autogenerate: { directory: "3/guide/legal", collapsed: true },
             },
           ],
         },
         {
           label: "Recipes",
           collapsed: true,
-          autogenerate: { directory: "2/recipes", collapsed: true },
+          autogenerate: { directory: "3/recipes", collapsed: true },
         },
         { 
           label: "Plugins",
           collapsed: true,
-          autogenerate: { directory: "2/plugins", collapsed: true },
+          autogenerate: { directory: "3/plugins", collapsed: true },
+        },
+        {
+          label: "Migrate",
+          collapsed: true,
+          autogenerate: { directory: "3/migrate", collapsed: true },
         },
         {
           label: "References",
           collapsed: true,
-          items: [
-            {
-              label: "Command Line Interface (CLI)",
-              link: "#",
-            },
-            {
-              label: "Tauri Config",
-              link: "#",
-            },
-            {
-              label: "JavaScript API",
-              link: "#",
-            },
-            {
-              label: "Rust API",
-              link: "#",
-            },
-          ],
+          autogenerate: { directory: "3/references", collapsed: true },
         },
       ],
     }),
