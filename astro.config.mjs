@@ -23,53 +23,61 @@ export default defineConfig({
       sidebar: [
         {
           label: "Quick Start",
-          items: [
-            { label: "Why Tauri?", link: "/2/guide/" },
-            { label: "Prerequisites", link: "/2/guide/prerequisites" },
-            {
-              label: "Create a Project",
-              link: "/2/guide/create/",
-            },
-            {
-              label: "Plugins",
-              link: "/2/plugin/",
-            },
-            { label: "Blog (temporary)", link: "/blog/" },
-          ],
+          autogenerate: { directory: "3/start", collapsed: true },
+        },
+        {
+          label: "Core concepts",
+          collapsed: true,
+          autogenerate: { directory: "3/core", collapsed: true },
         },
         {
           label: "Guides",
+          collapsed: true,
           items: [
             {
-              label: "Build & Distribute",
-              link: "/2/guide/build-distribute",
-            },
-            { label: "Customize", link: "/2/guide/customize/" },
-            {
-              label: "Inter-Process Communication",
-              link: "#",
+              label: "Develop",
+              autogenerate: { directory: "3/guide/develop", collapsed: true },
             },
             {
-              label: "Create a Plugin",
-              link: "/2/guide/create-plugin",
+              label: "Build",
+              autogenerate: { directory: "3/guide/build", collapsed: true },
             },
             {
-              label: "Troubleshoot",
-              link: "/2/guide/troubleshoot",
+              label: "Test",
+              autogenerate: { directory: "3/guide/test", collapsed: true },
             },
             {
-              label: "More Guides",
-              link: "/2/guide/list",
+              label: "CI/CD",
+              autogenerate: { directory: "3/guide/ci-cd", collapsed: true },
+            },
+            {
+              label: "Distribute",
+              autogenerate: { directory: "3/guide/distribute", collapsed: true },
+            },
+            {
+              label: "Rust",
+              autogenerate: { directory: "3/guide/rust", collapsed: true },
+            },
+            {
+              label: "Javascript",
+              autogenerate: { directory: "3/guide/javascript", collapsed: true },
             },
           ],
         },
         {
-          label: "Reference",
+          label: "Recipes",
+          collapsed: true,
+          autogenerate: { directory: "2/recipes", collapsed: true },
+        },
+        { 
+          label: "Plugins",
+          collapsed: true,
+          autogenerate: { directory: "2/plugins", collapsed: true },
+        },
+        {
+          label: "References",
+          collapsed: true,
           items: [
-            {
-              label: "Project Structure",
-              link: "#",
-            },
             {
               label: "Command Line Interface (CLI)",
               link: "#",
@@ -87,10 +95,6 @@ export default defineConfig({
               link: "#",
             },
           ],
-        },
-        {
-          label: "TODO",
-          autogenerate: { directory: "2/todo", },
         },
       ],
     }),
