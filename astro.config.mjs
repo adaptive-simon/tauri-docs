@@ -23,7 +23,7 @@ export default defineConfig({
       sidebar: [
         {
           label: "Quick Start",
-          autogenerate: { directory: "3/start", collapsed: true },
+          autogenerate: { directory: "start" },
         },
         {
           label: "Core concepts",
@@ -31,11 +31,13 @@ export default defineConfig({
           items: [
             {
               label: "Architecture",
-              autogenerate: { directory: "3/core/architecture" },
+              collapsed: true,
+              autogenerate: { directory: "core/architecture", collapsed: false },
             },
             {
               label: "Features",
-              autogenerate: { directory: "3/core/features", collapsed: true },
+              collapsed: true,
+              autogenerate: { directory: "core/features", collapsed: true },
             },
           ]
         },
@@ -45,11 +47,13 @@ export default defineConfig({
           items: [
             {
               label: "Web",
-              autogenerate: { directory: "3/basic/web", collapsed: true },
+              collapsed: true,
+              autogenerate: { directory: "basic/web", collapsed: true },
             },
             {
               label: "Rust",
-              autogenerate: { directory: "3/basic/rust", collapsed: true },
+              collapsed: true,
+              autogenerate: { directory: "basic/rust", collapsed: true },
             }
           ]
         },
@@ -59,57 +63,65 @@ export default defineConfig({
           items: [
             {
               label: "Developing",
-              autogenerate: { directory: "3/guide/develop", collapsed: true },
+              collapsed: true,
+              autogenerate: { directory: "guide/develop", collapsed: true },
             },
             {
               label: "Debugging",
-              autogenerate: { directory: "3/guide/debug", collapsed: true },
+              collapsed: true,
+              autogenerate: { directory: "guide/debug", collapsed: true },
             },
             {
               label: "Testing",
-              autogenerate: { directory: "3/guide/test", collapsed: true },
+              collapsed: true,
+              autogenerate: { directory: "guide/test", collapsed: true },
             },
             {
               label: "Building",
-              autogenerate: { directory: "3/guide/build", collapsed: true },
+              collapsed: true,
+              autogenerate: { directory: "guide/build", collapsed: true },
             },
             {
               label: "Distributing",
-              autogenerate: { directory: "3/guide/distribute", collapsed: true },
+              collapsed: true,
+              autogenerate: { directory: "guide/distribute", collapsed: true },
             },
             {
               label: "CI/CD",
-              autogenerate: { directory: "3/guide/ci-cd", collapsed: true },
+              collapsed: true,
+              autogenerate: { directory: "guide/ci-cd", collapsed: true },
             },
             {
               label: "Security",
-              autogenerate: { directory: "3/guide/security", collapsed: true },
+              collapsed: true,
+              autogenerate: { directory: "guide/security", collapsed: true },
             },
             {
               label: "Legal",
-              autogenerate: { directory: "3/guide/legal", collapsed: true },
+              collapsed: true,
+              autogenerate: { directory: "guide/legal", collapsed: true },
             },
           ],
         },
         {
           label: "Recipes",
           collapsed: true,
-          autogenerate: { directory: "3/recipes", collapsed: true },
+          autogenerate: { directory: "recipes", collapsed: true },
         },
         { 
           label: "Plugins",
           collapsed: true,
-          autogenerate: { directory: "3/plugins", collapsed: true },
+          autogenerate: { directory: "plugins", collapsed: true },
         },
         {
           label: "Migrate",
           collapsed: true,
-          autogenerate: { directory: "3/migrate", collapsed: true },
+          autogenerate: { directory: "migrate", collapsed: true },
         },
         {
           label: "References",
           collapsed: true,
-          autogenerate: { directory: "3/references", collapsed: true },
+          autogenerate: { directory: "references", collapsed: true },
         },
       ],
     }),
