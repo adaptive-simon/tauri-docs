@@ -98,7 +98,7 @@ export default defineConfig({
 				{
 					label: 'Quick Start',
 					translations: {
-						'zh-CN': '功能和秘诀',
+						'zh-CN': '快速开始',
 					},
 					collapsed: true,
 					autogenerate: { directory: 'start' },
@@ -106,7 +106,7 @@ export default defineConfig({
 				{
 					label: 'Core Concepts',
 					translations: {
-						'zh-CN': '功能和秘诀',
+						'zh-CN': '核心概念',
 					},
 					collapsed: true,
 					autogenerate: { directory: 'concepts' },
@@ -114,7 +114,7 @@ export default defineConfig({
 				{
 					label: 'Develop',
 					translations: {
-						'zh-CN': '功能和秘诀',
+						'zh-CN': '开发',
 					},
 					collapsed: true,
 					autogenerate: { directory: 'develop' },
@@ -122,7 +122,7 @@ export default defineConfig({
 				{
 					label: 'Test',
 					translations: {
-						'zh-CN': '功能和秘诀',
+						'zh-CN': '测试',
 					},
 					collapsed: true,
 					autogenerate: { directory: 'test' },
@@ -130,7 +130,7 @@ export default defineConfig({
 				{
 					label: 'Security',
 					translations: {
-						'zh-CN': '功能和秘诀',
+						'zh-CN': '安全',
 					},
 					collapsed: true,
 					autogenerate: { directory: 'security' },
@@ -138,7 +138,7 @@ export default defineConfig({
 				{
 					label: 'Distribute',
 					translations: {
-						'zh-CN': '功能和秘诀',
+						'zh-CN': '分发',
 					},
 					collapsed: true,
 					autogenerate: { directory: 'distribute' },
@@ -146,7 +146,7 @@ export default defineConfig({
 				{
 					label: 'Features',
 					translations: {
-						'zh-CN': '功能和秘诀',
+						'zh-CN': '功能',
 					},
 					collapsed: true,
 					autogenerate: { directory: 'features' },
